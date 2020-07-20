@@ -19,7 +19,9 @@ the data are append in the csv if the program is re run.
 
 
 # scrapped data
-    the CSV contains line like this: each line is a datapoint. the csv are stored in a folder called "scrapResult"
+
+the CSV contains line like this: each line is a datapoint. the csv are stored in a folder called "scrapResult"
+```
         2019-10-21 19:28:50,AT,76,38,93,66.67,116
         1)  value is the date and time in the local format (where the script is ran)
         2)  is the country code (AT = austria) in iso3166
@@ -28,7 +30,10 @@ the data are append in the csv if the program is re run.
         5)  is the number of server dead
         6)  is ratio of online server over the online and off server
         7) is the number of player connected to the country's server
-    the function retun a dictionnary and thoeses are the key : 
+ ```
+ 
+ the function retun a dictionnary and thoeses are the key :
+ ```
         countryISO -> the ISO code of the country we scrapped (EX : AT) (string)
         countryname -> the human name of the country (EX : Austria) (string)
         timestamp -> timestamp in YYYY-MM-DD HH:MM:SS format EX : 2015-10-21 19:28:50 (string)
@@ -37,3 +42,4 @@ the data are append in the csv if the program is re run.
         serverdead -> number of server dead (EX : 666) (int)
         ratioupdown -> % of server up by the sum of server up and down (EX : 77) (int)
         player -> number of player connected on the country's server (EX : 1337) (int)
+```
