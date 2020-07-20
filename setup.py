@@ -83,23 +83,11 @@ setup(
     # Classifiers help users find your project by categorizing it.
     #
     # For a list of valid classifiers, see https://pypi.org/classifiers/
-    classifiers=[  # Optional
-        # How mature is this project? Common values are
-        #   3 - Alpha
-        #   4 - Beta
-        #   5 - Production/Stable
-        'Development Status :: 4 - Beta',
-
-        # Indicate who your project is intended for
-        'Intended Audience :: Developers',
-        'Topic :: Web scrapping :: battlemetrics',
-
-        # Pick your license as you wish
-        'License :: OSI Approved :: GNUv3 License',
-
-        # Specify the Python versions you support here. In particular, ensure
-        # that you indicate you support Python 3. These classifiers are *not*
-        # checked by 'pip install'. See instead 'python_requires' below.
+    classifiers=[
+        'Development Status :: 5 - Production/Stable',
+        'Intended Audience :: Science/Research',
+        'Topic :: Internet :: WWW/HTTP',
+        'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
@@ -115,12 +103,8 @@ setup(
     # by commas, to be used to assist searching for the distribution in a
     # larger catalog.
     keywords='scrapper, battlemetrics, steam',  # Optional
-
-    # When your source code is in a subdirectory under the project root, e.g.
-    # `src/`, it is necessary to specify the `package_dir` argument.
-    package_dir={'': 'battlemetrics_scrapper'},  # Optional
   
-    packages=py_modules("battlemetrics_scrapper.py"),  # Required
+    packages=["battlemetrics_scrapper"],  # Required
 
     # Specify which Python versions you support. In contrast to the
     # 'Programming Language' classifiers above, 'pip install' will check this
@@ -134,7 +118,7 @@ setup(
     #
     # For an analysis of "install_requires" vs pip's requirements files see:
     # https://packaging.python.org/en/latest/requirements.html
-    install_requires=['iso3166', 'requests', 'urllib'],  # Optional
+    install_requires=['iso3166', 'requests'],  # Optional
 
     # List additional groups of dependencies here (e.g. development
     # dependencies). Users will be able to install these using the "extras"
