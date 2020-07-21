@@ -52,7 +52,7 @@ setup(
     #
     # This field corresponds to the "Description" metadata field:
     # https://packaging.python.org/specifications/core-metadata/#description-optional
-    long_description=long_description,  # Optional
+    long_description='this package allow you to scrap the advertised server on battlemetrics',  # Optional
 
     # Denotes that our long_description is in Markdown; valid values are
     # text/plain, text/x-rst, and text/markdown
@@ -64,7 +64,7 @@ setup(
     #
     # This field corresponds to the "Description-Content-Type" metadata field:
     # https://packaging.python.org/specifications/core-metadata/#description-content-type-optional
-    long_description_content_type='this package allow you to scrap the advertised server on battlemetrics',  # Optional (see note above)
+    long_description_content_type='text/plain; charset=UTF-8',  # Optional (see note above)
 
     # This should be a valid link to your project's main homepage.
     #
